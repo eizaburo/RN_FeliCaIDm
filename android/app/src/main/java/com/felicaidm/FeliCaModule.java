@@ -64,6 +64,8 @@ public class FeliCaModule extends ReactContextBaseJavaModule {
             String idmString = bytesToHexString(tag.getId());
             Log.d("Hoge","IDm=" + idmString);
 
+            //必要に応じて取得したtag使ってNfcF生成してtransceive()でいろいろすればよい
+
             //渡すパラメータ定義(emitの際 WritableMapである必要があるため）
             WritableMap params = Arguments.createMap();
             params.putString("idm", idmString);
